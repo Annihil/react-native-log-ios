@@ -1,0 +1,33 @@
+{
+  "name": "react-native-log-ios",
+  "version": "1.0.0",
+  "description": "React Native log iOS",
+  "main": "bin/log.js",
+  "bin": {
+    "react-native-log-ios": "bin/log.js"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Annihil/react-native-log-ios.git"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "log",
+    "logger",
+    "xcode",
+    "osx",
+    "mac",
+    "macos",
+    "macosx",
+    "mac os x",
+    "ios simulator"
+  ],
+  "author": "Annihil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Annihil/react-native-log-ios/issues"
+  },
+  "homepage": "https://github.com/Annihil/react-native-log-ios#readme"
+}
