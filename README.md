@@ -1,5 +1,8 @@
 # React Native Log iOS
 
+[![npm](https://img.shields.io/npm/v/react-native-log-ios.svg)](https://www.npmjs.com/package/react-native-log-ios)
+[![license](https://img.shields.io/github/license/annihil/react-native-log-ios.svg)]()
+
 This standalone script replace the broken `react-native log-ios`.  
 It will watch the Mac OS X system log file and filter only the lines concerning your XCode project.  
 You will be able to see the `console.log`, `console.warn` and `console.error` outputs.  
@@ -32,6 +35,11 @@ Line format is the following: `HH:mm:ss, <eventMessage>`
 12:02:39, Hello world!
 ```
 
-## LICENSE
+## Versioning
 
-[MIT](LICENSE)
+React Native Log iOS uses [SemVer](http://semver.org/) for versioning.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
+for details.
