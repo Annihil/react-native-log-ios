@@ -6,7 +6,13 @@
   "bin": {
     "react-native-log-ios": "bin/log.js"
   },
+  "scripts": {
+    "test": "npx jest __tests__/index.js"
+  },
   "preferGlobal": true,
+  "files": [
+    "bin/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Annihil/react-native-log-ios.git"
@@ -29,5 +35,11 @@
   "bugs": {
     "url": "https://github.com/Annihil/react-native-log-ios/issues"
   },
-  "homepage": "https://github.com/Annihil/react-native-log-ios#readme"
+  "homepage": "https://github.com/Annihil/react-native-log-ios#readme",
+  "dependencies": {
+    "commander": "^2.19.0"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }

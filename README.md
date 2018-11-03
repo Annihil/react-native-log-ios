@@ -3,6 +3,10 @@
 [![npm](https://img.shields.io/npm/v/react-native-log-ios.svg)](https://www.npmjs.com/package/react-native-log-ios)
 [![license](https://img.shields.io/github/license/annihil/react-native-log-ios.svg)]()
 
+<p align="center">
+	<img src="./.assets/react-native-log-ios.svg" height="260" alt="React Native Log iOS logo"/>
+</p>
+
 This standalone script replace the broken `react-native log-ios`.  
 It will watch the Mac OS X system log file and filter only the lines concerning your XCode project.  
 You will be able to see the `console.log`, `console.warn` and `console.error` outputs.  
@@ -18,6 +22,10 @@ npm i -g react-native-log-ios
 
 ```
 react-native-log-ios <XCode Project Name>
+```
+
+```
+react-native-log-ios --help
 ```
 
 ## Result
