@@ -20,8 +20,10 @@ npm i -g react-native-log-ios
 
 ## Usage
 
+Important: You will need to provide the **FacebookDisplayName** to the command - in some cases it is different from the Xcode project name, or the bundle name. You will find this "FacebookDisplayName" in Info.plist.
+
 ```
-react-native-log-ios <XCode Project Name>
+react-native-log-ios <FacebookDisplayName>
 ```
 
 ```
