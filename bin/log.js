@@ -34,8 +34,16 @@ lg.stdout.on("data", data => {
   // Assumption: { is always at the end of a line, } at the start of line.
   const m = str.match(/\{$[\s\S]+?^\}/gm);
   if (m === null) return;
-
-  const all = m.map(str => JSON.parse(str));
+  
+  const all = m.map(str => {
+    try {
+      return JSON.parse(str);
+    } catch(error) {
+      // Cannot parse - it can happen with certain log entries (maybe large, truncated ones)
+      // In that case, ignore the error and return the plain string.
+      return { timestamp: Date.now(), eventMessage: str };
+    }
+  });
 
   all.forEach(({ timestamp, eventMessage }) => {
     const time = new Date(timestamp).toLocaleTimeString([], { hour12: false });
