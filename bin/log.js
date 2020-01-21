@@ -45,8 +45,6 @@ lg.stdout.on("data", data => {
     }
   });
 
-  const all = m.map(str => JSON.parse(str));
-
   all.forEach(({ timestamp, eventMessage }) => {
     const time = new Date(timestamp).toLocaleTimeString([], { hour12: false });
     console.log([time, eventMessage].join(", "));
