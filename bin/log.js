@@ -7,7 +7,7 @@ let projectName;
 
 program
   .version("1.0.0")
-  .usage("react-native-log-ios <XCode Project Name>")
+  .usage("react-native-log-ios <Xcode Project Name>")
   .arguments("<xcodeProjectName>")
   .action(xcodeProjectName => (projectName = xcodeProjectName))
   .parse(process.argv);
@@ -26,7 +26,7 @@ const logArgs = [
 
 const lg = spawn("log", logArgs);
 
-console.log("React Native iOS Logger started for XCode project", projectName);
+console.log("React Native iOS Logger started for Xcode project", projectName);
 
 lg.stdout.on("data", data => {
   const str = data.toString();

@@ -8,7 +8,7 @@
 </p>
 
 This standalone script replace the broken `react-native log-ios`.  
-It will watch the Mac OS X system log file and filter only the lines concerning your XCode project.  
+It will watch the macOS system log file and filter only the lines concerning your Xcode project.  
 You will be able to see the `console.log`, `console.warn` and `console.error` outputs.  
 
 
